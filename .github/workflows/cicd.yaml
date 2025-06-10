@@ -48,7 +48,7 @@ jobs:
       uses: golangci/golangci-lint-action@v6
       with:
         version: v1.56.2
-        args: run ./... --skip-dirs-use-default=false --skip-dirs=run
+        args: ./... --skip-dirs-use-default=false --skip-dirs=run
   
   push:
     runs-on: ubuntu-latest
